@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+lung_image_sets/
+
 # Distribution / packaging
 .Python
 build/
