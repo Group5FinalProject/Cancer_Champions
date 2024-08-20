@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 lung_image_sets/
+preprocessed_images/
 
 # Distribution / packaging
 .Python
