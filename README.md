@@ -85,8 +85,6 @@ A key feature of U-Net is its use of skip connections between the contracting an
 - **Architecture**: U-Net
 - **Reason**: Effective for segmentation tasks with limited annotated data, using skip connections to capture both context and precise localization.
 
-## Result Summary
-
 ## Future Work
 - **Hyperparameter Tuning**: While we have performed initial tuning of key hyperparameters such as learning rate, batch size, and dropout rates, more extensive tuning could further improve model accuracy and reduce loss. Utilizing advanced techniques such as grid search or Bayesian optimization could help us identify more optimal hyperparameter configurations.
 
