@@ -87,6 +87,17 @@ A key feature of U-Net is its use of skip connections between the contracting an
 
 ## Result Summary
 
+## Future Work
+- **Hyperparameter Tuning**: While we have performed initial tuning of key hyperparameters such as learning rate, batch size, and dropout rates, more extensive tuning could further improve model accuracy and reduce loss. Utilizing advanced techniques such as grid search or Bayesian optimization could help us identify more optimal hyperparameter configurations.
+
+- **Batch Size Optimization**: We recommend experimenting with different batch sizes to find the optimal balance between training efficiency and model performance. Adjusting batch sizes could lead to better gradient updates and reduce training time without sacrificing accuracy.
+
+- **Learning Rate and Epoch Adjustments**: Fine-tuning the learning rate schedule and experimenting with different numbers of training epochs could help the model converge to a better solution. Implementing techniques such as learning rate warm-up or gradual decay could further stabilize training and help avoid issues such as overfitting or underfitting.
+
+- **Model Architecture Enhancements**: Exploring variations in the U-Net architecture or integrating other state-of-the-art architectures such as Attention U-Net or ResNet-based models could enhance the model’s capability to capture more complex features from the data.
+
+- **Data Augmentation Techniques**: Expanding the data augmentation strategies to include more advanced techniques (e.g., elastic transformations, random erasing) could improve the model’s ability to generalize, especially when dealing with limited annotated data.
+
 ## Compliance & Ethics
 In our project, we have taken careful measures to ensure compliance with data privacy regulations and to address ethical considerations related to the use of medical data.
 
