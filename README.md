@@ -60,7 +60,7 @@ A key feature of U-Net is its use of skip connections between the contracting an
   6. Number of epochs
 - **Strategy**: Used learning rate decay and warm-up techniques to stabilize training.
   
-* Metrics & Results:
+## Metrics & Results:
 - **Loss**: 0.0075
 
 ![Figure 4: Model's Loss Plot for 500 Images and 500 Masks](Visualizations/Model_Loss.JPG)
