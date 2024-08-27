@@ -1,5 +1,14 @@
 # Deep Learning Model for Lung Cancer Detection and Segmentation
 
+## Abstract
+	There is large consent that successful training of deep networks requires many thousand annotated training samples. In this project, we present a network (U-Net) model. U-NET is a neural network model dedicated to Computer Vision tasks and more particularly to Semantic Segmentation problems. It is a widely used deep learning architecture that was first introduced in the “U-Net: Convolutional Networks for Biomedical Image Segmentation” paper. The primary purpose of this architecture was to address the challenge of limited annotated data in the medical field. This network was designed to effectively leverage a smaller amount of data while maintaining speed and accuracy. In a nutshell, U-Net works as follows:
+      •	It uses a contracting path to downsample the image features.
+      •	Upsamples the features using an expansive path.
+      •	Concatenates features from the downsampling process during upsampling.  
+  The contracting and expansive paths mirror each other. The name U-Net comes from the shape of the network, which forms a U-shape.
+  Training and evaluation procedures include data splitting into training, validation, and test sets, with strategies to address class imbalance and overfitting. Evaluation metrics such as Dice coefficient, Intersection over Union (IoU), accuracy, sensitivity, and specificity are used to assess model performance, complemented by rigorous cross-validation and independent testing to ensure reliability.
+  Compliance with data privacy regulations such as HIPAA or GDPR is essential, alongside addressing ethical considerations related to the use of medical data and maintaining transparency in model predictions. This framework provides a structured approach to developing a robust lung cancer image processing system, ensuring technical excellence and ethical integrity.
+
 ## Project3-Group 5: Cancer_Champions
 
 ## Group Members
@@ -31,9 +40,8 @@ The U-Net neural network, introduced by Ronneberger et al. in their paper "U-Net
 A key feature of U-Net is its use of skip connections between the contracting and expansive paths, which allows the network to preserve spatial information critical for accurate segmentation. These connections enable the network to combine both global context and detailed localization in a highly efficient manner, leading to improved performance in segmenting complex medical images. This makes U-Net particularly well-suited for applications in medical image processing, such as detecting and segmenting cancerous tissues from scans.
 
 ## Data Source
-- Our dataset contains 25,000 histopathological images, each sized 768 x 768 pixels in jpeg format. The dataset is categorized into 5 distinct classes. The original dataset was derived from a HIPAA-compliant and validated source, consisting of a total of 750 lung tissue images (250 benign lung tissue, 250 lung adenocarcinomas, and 250 lung squamous cell carcinomas) and 500 colon tissue images (250 benign colon tissue and 250 colon adenocarcinomas). Using the Augmentor package, the dataset was expanded to 25,000 images through various augmentation techniques.
+- Our dataset contains 500 histopathological images, each sized 512 x 512 pixels in png format. The dataset is categorized into 5 distinct classes. The original dataset was derived from a HIPAA-compliant and validated source.
 
-- For our project, we specifically selected the lung cancer data, focusing on the classification of benign lung tissue, lung adenocarcinomas, and lung squamous cell carcinomas. This subset allows us to build and train our deep learning models for accurate lung cancer detection and segmentation.
 
 ## Method
 * Activation Function:
