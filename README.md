@@ -26,10 +26,18 @@ The overarching goal is to develop a robust image processing system for lung can
 
 ## Background
 
-### Motivation
+### Intorduction/Motivation
 Lung cancer remains one of the deadliest cancers worldwide, with survival rates significantly improving when diagnosed at early stages. However, accurate and timely detection is often hindered by the complexity of medical images, variability in tumor appearance, and the time-consuming nature of manual diagnosis by radiologists. The motivation behind our project is to leverage the power of deep learning, particularly the U-Net architecture, to create a tool that aids in the precise segmentation of lung cancer from medical images.
 
 By automating the segmentation process, our goal is to improve the efficiency and accuracy of lung cancer detection, assisting healthcare professionals in making faster, more informed decisions. This project seeks to bridge the gap between limited annotated medical data and the growing need for robust diagnostic tools that can operate with fewer resources, while also ensuring that patient data is handled with the utmost care and compliance with privacy regulations. Ultimately, we hope our work will contribute to the broader fight against lung cancer, enabling earlier interventions and better patient outcomes.
+
+### Problem Statement
+Current methods of lung cancer detection heavily rely on the manual interpretation of CT scans by radiologists. This process can be subjective and inconsistent, leading to variability in diagnosis and missed opportunities for early intervention. To overcome these limitations, there is a need for an automated, reliable, and accurate method for segmenting lung cancer lesions in CT scans.
+
+### Solution Overview
+U-Net is a deep learning architecture specifically designed for semantic segmentation tasks, particularly in medical imaging. Its unique architecture, characterized by its symmetric encoder-decoder structure and skip connections, allows it to capture both local and global features, making it highly effective for segmenting complex structures in medical images.
+
+In this project, we aim to develop a U-Net model from scratch to automatically segment lung cancer regions from CT scans.
 
 ### What is U-Net?
 
@@ -38,6 +46,25 @@ By automating the segmentation process, our goal is to improve the efficiency an
 The U-Net neural network, introduced by Ronneberger et al. in their paper "U-Net: Convolutional Networks for Biomedical Image Segmentation," is a deep learning architecture designed specifically for semantic segmentation in biomedical imaging. Unlike traditional models that require large annotated datasets, U-Net is optimized to perform well with limited training data, a common issue in the medical field. Its architecture consists of a contracting path that compresses the input image to capture context, followed by an expansive path that restores the image’s resolution for precise segmentation.
 
 A key feature of U-Net is its use of skip connections between the contracting and expansive paths, which allows the network to preserve spatial information critical for accurate segmentation. These connections enable the network to combine both global context and detailed localization in a highly efficient manner, leading to improved performance in segmenting complex medical images. This makes U-Net particularly well-suited for applications in medical image processing, such as detecting and segmenting cancerous tissues from scans.
+
+## Libraries
+### Import necessary libraries
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.losses import BinaryCrossentropy
+from tensorflow.keras.metrics import BinaryAccuracy
+import keras_tuner as kt
+from keras_tuner import Hyperband
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, LearningRateScheduler
+from keras_tuner import HyperParameters
+from tensorflow.keras import backend as K
+from skimage import io, transform
+import os
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
 
 ## Data Source
 - Our dataset contains 500 histopathological images, each sized 512 x 512 pixels in png format. The dataset is categorized into 5 distinct classes. The original dataset was derived from a HIPAA-compliant and validated source.
