@@ -85,6 +85,11 @@ A key feature of U-Net is its use of skip connections between the contracting an
 - **Architecture**: U-Net
 - **Reason**: Effective for segmentation tasks with limited annotated data, using skip connections to capture both context and precise localization.
 
+## Challenges
+- At the outset of our project, we initially aimed to leverage a pretrained model specifically designed for lung cancer segmentation. However, it quickly became apparent that this pretrained model did not meet the specific requirements of our task. As a result, we decided to explore an alternative pretrained model. Unfortunately, this attempt also proved unsuccessful due to deprecated or non-functional code within the model.
+
+- Given these setbacks, we made the decision to develop a new U-Net model from scratch. Recognizing the time constraints, there were initial concerns about whether we could successfully complete the model within the project’s timeline. To mitigate this risk, we devised a contingency plan (Plan-B) where part of the team focused on building the U-Net model while others worked simultaneously on an alternative approach for implementation and deployment. Despite the initial concerns, we successfully completed the U-Net model within the allocated time, rendering Plan-B unnecessary and allowing us to conclude the project with Plan-A.
+
 ## Future Work
 - **Hyperparameter Tuning**: While we have performed initial tuning of key hyperparameters such as learning rate, batch size, and dropout rates, more extensive tuning could further improve model accuracy and reduce loss. Utilizing advanced techniques such as grid search or Bayesian optimization could help us identify more optimal hyperparameter configurations.
 
