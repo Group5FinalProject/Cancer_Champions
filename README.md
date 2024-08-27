@@ -1,4 +1,4 @@
-# Deep Learning Model for Lung Cancer Detection and Segmentation
+# 
 
 ## Abstract
 	There is large consent that successful training of deep networks requires many thousand annotated training samples. In this project, we present a network (U-Net) model. U-NET is a neural network model dedicated to Computer Vision tasks and more particularly to Semantic Segmentation problems. It is a widely used deep learning architecture that was first introduced in the “U-Net: Convolutional Networks for Biomedical Image Segmentation” paper. The primary purpose of this architecture was to address the challenge of limited annotated data in the medical field. This network was designed to effectively leverage a smaller amount of data while maintaining speed and accuracy. In a nutshell, U-Net works as follows:
@@ -149,4 +149,3 @@ We are committed to addressing the ethical concerns associated with the use of m
 - https://www.kaggle.com/datasets/newra008/lung-mask-image-dataset
 - https://www.openai.com/chatgpt
 - https://towardsdatascience.com/sigmoid-and-softmax-functions-in-5-minutes-f516c80ea1f9
-- 
