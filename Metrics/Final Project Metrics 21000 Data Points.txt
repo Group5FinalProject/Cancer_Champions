@@ -1,0 +1,75 @@
+Loading data...
+Loaded 20912 images and masks.
+Reloading Tuner from my_dir\unet_tuning\tuner0.json
+Starting hyperparameter tuning...
+Number of trials completed: 1
+Best Hyperparameters: [<keras_tuner.src.engine.hyperparameters.hyperparameters.HyperParameters object at 0x0000014D00001870>]
+Best Hyperparameters: <keras_tuner.src.engine.hyperparameters.hyperparameters.HyperParameters object at 0x0000014D00001870>
+Epoch 1/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m30385s[0m 29s/step - binary_accuracy: 0.5934 - dice_coefficient: 0.0019 - iou: 9.3936e-04 - loss: 0.5105 - sensitivity: 0.3872 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0019 - val_iou: 9.4904e-04 - val_loss: 0.0905 - val_sensitivity: 0.0863 - learning_rate: 1.0000e-04
+Epoch 2/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m8047s[0m 8s/step - binary_accuracy: 0.6609 - dice_coefficient: 0.0019 - iou: 9.5034e-04 - loss: 0.0612 - sensitivity: 0.0583 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0020 - val_iou: 9.8426e-04 - val_loss: 0.0206 - val_sensitivity: 0.0186 - learning_rate: 9.9996e-05
+Epoch 3/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m8026s[0m 8s/step - binary_accuracy: 0.6612 - dice_coefficient: 0.0020 - iou: 0.0010 - loss: 0.0170 - sensitivity: 0.0150 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0022 - val_iou: 0.0011 - val_loss: 0.0105 - val_sensitivity: 0.0082 - learning_rate: 9.9992e-05
+Epoch 4/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m8024s[0m 8s/step - binary_accuracy: 0.6600 - dice_coefficient: 0.0023 - iou: 0.0012 - loss: 0.0097 - sensitivity: 0.0074 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0027 - val_iou: 0.0013 - val_loss: 0.0080 - val_sensitivity: 0.0058 - learning_rate: 9.9988e-05
+Epoch 5/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7978s[0m 8s/step - binary_accuracy: 0.6605 - dice_coefficient: 0.0027 - iou: 0.0014 - loss: 0.0076 - sensitivity: 0.0052 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0030 - val_iou: 0.0015 - val_loss: 0.0070 - val_sensitivity: 0.0045 - learning_rate: 9.9984e-05
+Epoch 6/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m20989s[0m 20s/step - binary_accuracy: 0.6619 - dice_coefficient: 0.0031 - iou: 0.0015 - loss: 0.0068 - sensitivity: 0.0044 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0032 - val_iou: 0.0016 - val_loss: 0.0066 - val_sensitivity: 0.0040 - learning_rate: 9.9980e-05
+Epoch 7/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m14875s[0m 14s/step - binary_accuracy: 0.6603 - dice_coefficient: 0.0034 - iou: 0.0017 - loss: 0.0065 - sensitivity: 0.0041 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0034 - val_iou: 0.0017 - val_loss: 0.0064 - val_sensitivity: 0.0037 - learning_rate: 9.9976e-05
+Epoch 8/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m10991s[0m 11s/step - binary_accuracy: 0.6605 - dice_coefficient: 0.0035 - iou: 0.0018 - loss: 0.0064 - sensitivity: 0.0039 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0038 - val_iou: 0.0019 - val_loss: 0.0063 - val_sensitivity: 0.0041 - learning_rate: 9.9971e-05
+Epoch 9/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m87175s[0m 83s/step - binary_accuracy: 0.6601 - dice_coefficient: 0.0036 - iou: 0.0018 - loss: 0.0063 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0036 - val_iou: 0.0018 - val_loss: 0.0063 - val_sensitivity: 0.0037 - learning_rate: 9.9967e-05
+Epoch 10/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m24815s[0m 24s/step - binary_accuracy: 0.6608 - dice_coefficient: 0.0037 - iou: 0.0018 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0037 - val_iou: 0.0018 - val_loss: 0.0062 - val_sensitivity: 0.0037 - learning_rate: 9.9963e-05
+Epoch 11/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7919s[0m 8s/step - binary_accuracy: 0.6602 - dice_coefficient: 0.0037 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0037 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0037 - learning_rate: 9.9959e-05
+Epoch 12/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7997s[0m 8s/step - binary_accuracy: 0.6613 - dice_coefficient: 0.0037 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0037 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0037 - learning_rate: 9.9955e-05
+Epoch 13/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m8021s[0m 8s/step - binary_accuracy: 0.6605 - dice_coefficient: 0.0037 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0038 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0038 - learning_rate: 9.9951e-05
+Epoch 14/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7700s[0m 7s/step - binary_accuracy: 0.6603 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0038 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0038 - learning_rate: 9.9947e-05
+Epoch 15/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9207s[0m 9s/step - binary_accuracy: 0.6610 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0038 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0038 - learning_rate: 9.9943e-05
+Epoch 16/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m8127s[0m 8s/step - binary_accuracy: 0.6611 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0037 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0037 - learning_rate: 9.9939e-05
+Epoch 17/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m16638s[0m 16s/step - binary_accuracy: 0.6606 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0037 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0037 - learning_rate: 9.9935e-05
+Epoch 18/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7676s[0m 7s/step - binary_accuracy: 0.6607 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0039 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0040 - learning_rate: 4.9965e-05
+Epoch 19/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7659s[0m 7s/step - binary_accuracy: 0.6607 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0038 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0038 - learning_rate: 9.9927e-05
+Epoch 20/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7654s[0m 7s/step - binary_accuracy: 0.6607 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0038 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0037 - learning_rate: 9.9922e-05
+Epoch 21/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7646s[0m 7s/step - binary_accuracy: 0.6611 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0038 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0038 - learning_rate: 9.9918e-05
+Epoch 22/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7629s[0m 7s/step - binary_accuracy: 0.6604 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0037 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0037 - learning_rate: 9.9914e-05
+Epoch 23/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7755s[0m 7s/step - binary_accuracy: 0.6612 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0037 - val_iou: 0.0019 - val_loss: 0.0062 - val_sensitivity: 0.0037 - learning_rate: 4.9955e-05
+Epoch 24/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7880s[0m 8s/step - binary_accuracy: 0.6611 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0033 - val_iou: 0.0016 - val_loss: 0.0068 - val_sensitivity: 0.0029 - learning_rate: 9.9906e-05
+Epoch 25/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7635s[0m 7s/step - binary_accuracy: 0.6620 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0035 - val_iou: 0.0017 - val_loss: 0.0065 - val_sensitivity: 0.0032 - learning_rate: 9.9902e-05
+Epoch 26/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7646s[0m 7s/step - binary_accuracy: 0.6615 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0037 - val_iou: 0.0019 - val_loss: 0.0063 - val_sensitivity: 0.0036 - learning_rate: 9.9898e-05
+Epoch 27/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7851s[0m 8s/step - binary_accuracy: 0.6611 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0025 - val_iou: 0.0012 - val_loss: 0.0090 - val_sensitivity: 0.0019 - learning_rate: 9.9894e-05
+Epoch 28/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m8226s[0m 8s/step - binary_accuracy: 0.6602 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 4.4775e-05 - val_iou: 2.2390e-05 - val_loss: 0.0127 - val_sensitivity: 2.2623e-05 - learning_rate: 4.9945e-05
+Epoch 29/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m8065s[0m 8s/step - binary_accuracy: 0.6612 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 6.7562e-06 - val_iou: 3.3802e-06 - val_loss: 0.0146 - val_sensitivity: 3.3830e-06 - learning_rate: 9.9886e-05
+Epoch 30/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7974s[0m 8s/step - binary_accuracy: 0.6611 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 0.0037 - val_iou: 0.0019 - val_loss: 0.0063 - val_sensitivity: 0.0037 - learning_rate: 9.9882e-05
+Epoch 31/100
+[1m1046/1046[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m7976s[0m 8s/step - binary_accuracy: 0.6612 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038 - val_binary_accuracy: 0.6603 - val_dice_coefficient: 5.8909e-04 - val_iou: 2.9464e-04 - val_loss: 0.0124 - val_sensitivity: 3.2190e-04 - learning_rate: 9.9878e-05
+[1m131/131[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m538s[0m 4s/step - binary_accuracy: 0.6610 - dice_coefficient: 0.0038 - iou: 0.0019 - loss: 0.0062 - sensitivity: 0.0038
+Loss: 0.006201515439897776
+Accuracy: 0.6603460311889648
+Dice Coefficient: 0.003763524116948247
+Intersection over Union (IoU): 0.0018853098154067993
+Sensitivity: 0.0037562926299870014

@@ -1,8 +1,6 @@
-The two links below will direct you to the cloud where you can download the setup utility files needed to successfully run the U-Net model from scratch.
-Please ensure you download those files and save then in the repo where the main code will be running from. They were too large to load to the repo.
-
-Link to kt_dir:
-https://drive.google.com/drive/folders/1R1uXidoQ5XRz6P-o3ozITLxcj2tVcyYg?usp=sharing
+The link below will direct you to the cloud where you can download the setup utility files needed to successfully run the U-Net model a pretrained. 
+Or else, you will have to train the model from scratch yourself and get your own weights as well as tuning paramweters.
+Please ensure to download those files and save them in the repo where the main code will be running from. They were too large to load to the repo.
 
 Link to my_dir:
-https://drive.google.com/drive/folders/1lAp4u-hZiEEVYZm08jNMVVGJoT0Od2Wt?usp=sharing
+https://drive.google.com/drive/folders/1CUoAbLpmgnZTSD-nDeXE3wEXIWJn0tyJ?usp=sharing

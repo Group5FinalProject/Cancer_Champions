@@ -39,7 +39,7 @@ In this project, we aim to develop a U-Net model from scratch to automatically s
 
 ### What is U-Net?
 
-![Figure 1: U-Net Model Architecture](README_Visualizations/U-Net_Model.jpg)
+![Figure 1: U-Net Model Architecture](Visualizations/U-Net_Model.jpg)
 
 The U-Net neural network, introduced by Ronneberger et al. in their paper "U-Net: Convolutional Networks for Biomedical Image Segmentation," is a deep learning architecture designed specifically for semantic segmentation in biomedical imaging. Unlike traditional models that require large annotated datasets, U-Net is optimized to perform well with limited training data, a common issue in the medical field. Its architecture consists of a contracting path that compresses the input image to capture context, followed by an expansive path that restores the image’s resolution for precise segmentation.
 
@@ -67,15 +67,34 @@ A key feature of U-Net is its use of skip connections between the contracting an
 ## Data Source
 - Our dataset contains 500 histopathological images, each sized 512 x 512 pixels in png format. The dataset is categorized into 5 distinct classes. The original dataset was derived from a HIPAA-compliant and validated source.
 
+### NOTE
+Because of the size of the data, they were uploaded to my Google Drive and I am sharing the links below for anyone with the links to download them. 
+The links are:
+
+Images
+https://drive.google.com/drive/folders/1mJubiHkGWKflv8UsZreK56bNS8z-86Kj?usp=sharing
+
+Masks:
+https://drive.google.com/drive/folders/1mVFoVoOmJZseWmSd3nr6Qz06_1Mb0E_O?usp=sharing
+
+
+The link below will direct you to the cloud where you can download the setup utility files needed to successfully run the U-Net model a pretrained. Or else, you will have to train the model from scratch yourself and get your own weights as well as tuning paramweters.
+Please ensure to download those files and save them in the repo where the main code will be running from. They were too large to load to the repo.
+
+Link to my_dir:
+https://drive.google.com/drive/folders/1lAp4u-hZiEEVYZm08jNMVVGJoT0Od2Wt?usp=sharing
+
+
+Please, feel free to reach out to any of the group's members with any questions or concerns.
 
 ## Method
 * Activation Function:
 - **Chosen**: Sigmoid
 - **Reason**: Achieved better accuracy for binary segmentation tasks, despite Softmax yielding smaller loss values.
 
-![Figure 2: Sigmoid Metrics Plot for 10 Images and Masks](README_Visualizations/Sigmoid_Metrics_Plot_for_10_Data.JPG)
+![Figure 2: Sigmoid Metrics Plot for 10 Images and Masks](Visualizations/Sigmoid_Metrics_Plot_for_10_Data.JPG)
 
-![Figure 3: Sigmoid Metrics Plot for 100 Images and Masks](README_Visualizations/Sigmoid_Metrics_Plot_for_100_Data.JPG)
+![Figure 3: Sigmoid Metrics Plot for 100 Images and Masks](Visualizations/Sigmoid_Metrics_Plot_for_100_Data.JPG)
 
 
 * Optimizer:
@@ -96,23 +115,23 @@ A key feature of U-Net is its use of skip connections between the contracting an
 ## Metrics & Results:
 - **Loss**: 0.0075
 
-![Figure 4: Model's Loss Plot for 500 Images and 500 Masks](README_Visualizations/Model_Loss.JPG)
+![Figure 4: Model's Loss Plot for 500 Images and 500 Masks](Visualizations/Model_Loss.JPG)
 
 - **Accuracy**: 0.6368
 
-![Figure 5: Model’s Accuracy Plot for 500 Images and 500 Masks](README_Visualizations/Model_Accuracy.JPG)
+![Figure 5: Model’s Accuracy Plot for 500 Images and 500 Masks](Visualizations/Model_Accuracy.JPG)
 
 - **Dice Coefficient**: 0.0018
 
-![Figure 6: Model’s Dice Coefficient Plot for 500 Images and 500 Masks](README_Visualizations/Model_Dice_Coefficient.JPG)
+![Figure 6: Model’s Dice Coefficient Plot for 500 Images and 500 Masks](Visualizations/Model_Dice_Coefficient.JPG)
 
 - **Sensitivity**: 0.0018
 
-![Figure 7: Model Sensitivity Plot for 500 Images and 500 Masks](README_Visualizations/Model_Sensitivity.JPG)
+![Figure 7: Model Sensitivity Plot for 500 Images and 500 Masks](Visualizations/Model_Sensitivity.JPG)
 
 - **IoU**: 0.0009
 
-![Figure 8: Model IoU Plot for 500 Images and 500 Masks](README_Visualizations/Model_IoU.JPG)
+![Figure 8: Model IoU Plot for 500 Images and 500 Masks](Visualizations/Model_IoU.JPG)
 
 * Model:
 - **Architecture**: U-Net
